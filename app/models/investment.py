@@ -27,7 +27,7 @@ class Investment(db.Model):
     stock = db.relationship('Stock', back_populates='investments')
 
 
-    # Validations
+
     @validates('num_shares')
     def validate_integer_value(self, key, value):
         if value < 0:
