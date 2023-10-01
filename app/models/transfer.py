@@ -13,8 +13,6 @@ class Transfer(db.Model):
     amount = db.Column(db.Float, nullable=False)
     executed_at = db.Column(db.DateTime, default=datetime.utcnow)
 
-    # Define Relationships
-    # Define One-to-Many relationship with Portfolio table
     portfolio = db.relationship('Portfolio', back_populates='transfers')
 
 
