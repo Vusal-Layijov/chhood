@@ -1,0 +1,24 @@
+
+.singleStockPage-upper {
+    margin: 50px 15%;
+    display: flex;
+    height: 500px;
+}
+
+.buySell__master {
+    width: 100%;
+    margin: 20px 0;
+    position: fixed;
+    left: 68%;
+    top: 150px;
+
+}
+
+.singleStockPage-middle {
+    margin: 0 15%;
+}
+@media (max-width: 1600px) {
+    .buySell__master {
+        left: 75%;
+    }
+}
