@@ -40,7 +40,7 @@ export const fetchStockData = async (ticker) => {
 
     const response = await fetch(url);
     const data = await response.json();
-
+    console.log('--------->',data)
     return data.results[0];
 }
 
