@@ -64,7 +64,7 @@ function LoginFormPage() {
         <img src="https://cdn.robinhood.com/assets/generated_assets/webapp/web-platform-prefetch-sdp/member/632fcb3e7ed928b2a960f3e003d10b44.jpg" alt="Login Image" />
       </div>
       <form className="login-form" onSubmit={handleSubmit}>
-        <h1 className="login-form__title">Log in to Arrow</h1>
+        <h1 className="login-form__title">Log in to CHHOOD</h1>
 
         <div className="login-form__errors">{Object.values(errors).length > 0 ? 'Unable to login with provided credentials' : ''}</div>
         <label className="login-form__label">
@@ -93,7 +93,7 @@ function LoginFormPage() {
             <hr className="login-form__button_or_line"/><div>   or   </div><hr className="login-form__button_or_line"/>
           </div>
           <button className="login-form__button__demoUser" onClick={loginDemoUser}>Log in as demo user</button>
-          <div className="create-account__button-container">Not on Arrow? <NavLink to='/signup'>Create an account</NavLink></div>
+          <div className="create-account__button-container">Not on CHHOOD? <NavLink to='/signup'>Create an account</NavLink></div>
         </div>
       </form>
 
