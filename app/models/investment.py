@@ -20,7 +20,7 @@ class Investment(db.Model):
         nullable=False
     )
 
-    # Define Relationships
+   
     # Define Many-to-One relationship with Portfolio table
     portfolio = db.relationship('Portfolio', back_populates='investments')
     # Define a Many-to-one relationship with Stocks
