@@ -24,7 +24,7 @@ class User(db.Model, UserMixin):
         nullable=False
     )
 
-    #Relationships
+
     # Define a one-to-one relationship between user and portfolio
     portfolio = db.relationship('Portfolio', uselist=False, back_populates='user')
     # Define One-to-Many relationship with Watchlist table

@@ -18,7 +18,7 @@ class Watchlist(db.Model):
         nullable=False
     )
 
-    # Define Relationships
+ 
     # Define Many-to-One relationship with users table
     user = db.relationship("User", back_populates="watchlists")
     # Define Many-to-Many relationship with stocks table through the join table watchlist_stocks
